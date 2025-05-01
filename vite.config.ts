@@ -24,6 +24,15 @@ export default defineConfig({
     },
   },
 
+  server: {
+    watch: {
+      usePolling: true,
+    },
+    port: 3000,
+    strictPort: true,
+    host: true, // needed for the Docker Container port mapping to work
+  },
+
   optimizeDeps: { exclude: ['fsevents'] },
 
   build: {

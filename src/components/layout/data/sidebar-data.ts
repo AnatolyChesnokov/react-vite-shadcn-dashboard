@@ -1,11 +1,11 @@
 import {
-  IconChecklist,
+  IconHistory,
   IconLayoutDashboard,
-  IconMessages,
-  IconPackages,
-  IconUsers,
+  IconList,
+  IconStatusChange,
+  IconCheckupList,
 } from '@tabler/icons-react'
-import { Command } from 'lucide-react'
+import logo from '@/assets/logo.webp'
 import { type SidebarData } from '../types'
 
 export const sidebarData: SidebarData = {
@@ -16,41 +16,61 @@ export const sidebarData: SidebarData = {
   },
   teams: [
     {
-      name: 'React Admin',
-      logo: Command,
-      plan: 'Vite + ShadcnUI',
+      name: 'Бурсервис',
+      logo: logo,
+      plan: '',
     },
   ],
   navGroups: [
     {
-      title: 'General',
+      title: 'Страницы',
       items: [
         {
-          title: 'Dashboard',
+          title: 'Дашборд',
           url: '/',
           icon: IconLayoutDashboard,
         },
         {
-          title: 'Tasks',
-          url: '/tasks',
-          icon: IconChecklist,
+          title: 'История действий',
+          url: '/logs',
+          icon: IconHistory,
         },
         {
-          title: 'Apps',
-          url: '/apps',
-          icon: IconPackages,
+          title: 'Статусы оборудования',
+          url: '/equipment',
+          icon: IconStatusChange,
         },
         {
-          title: 'Chats',
-          url: '/chats',
-          badge: '3',
-          icon: IconMessages,
+          title: 'Статистика',
+          url: '/statistics',
+          icon: IconCheckupList,
         },
         {
-          title: 'Users',
-          url: '/users',
-          icon: IconUsers,
+          title: 'Справочники',
+          url: '/catalogs',
+          icon: IconList,
         },
+        // {
+        //   title: 'Tasks',
+        //   url: '/tasks',
+        //   icon: IconChecklist,
+        // },
+        // {
+        //   title: 'Apps',
+        //   url: '/apps',
+        //   icon: IconPackages,
+        // },
+        // {
+        //   title: 'Chats',
+        //   url: '/chats',
+        //   badge: '3',
+        //   icon: IconMessages,
+        // },
+        // {
+        //   title: 'Users',
+        //   url: '/users',
+        //   icon: IconUsers,
+        // },
       ],
     },
   ],

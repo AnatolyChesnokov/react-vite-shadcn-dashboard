@@ -4,10 +4,10 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --port=3000",
+    "dev": "vite --open",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview --port=3000",
+    "preview": "vite preview",
     "format:check": "prettier --check .",
     "format": "prettier --write .",
     "knip": "knip"
