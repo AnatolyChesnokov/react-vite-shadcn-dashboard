@@ -25,4 +25,4 @@
  * }
  * ```
  */
-export const fonts = ['mono', 'system'] as const
+export const fonts = ['inter', 'manrope', 'system'] as const

@@ -32,15 +32,4 @@ export default defineConfig({
     strictPort: true,
     host: true, // needed for the Docker Container port mapping to work
   },
-
-  optimizeDeps: { exclude: ['fsevents'] },
-
-  build: {
-    rollupOptions: {
-      external: ['fs/promises'],
-      output: {
-        experimentalMinChunkSize: 3500,
-      },
-    },
-  },
 })
